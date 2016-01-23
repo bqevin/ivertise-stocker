@@ -4,5 +4,4 @@
 
 # Brief
 • There is easy Searching for images and models with inclusion of tags, keywords, search
-words & a search bar 
-
+words & a search bar
