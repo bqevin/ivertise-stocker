@@ -1,6 +1,8 @@
 <?php
-/**
-*
+/*
+*Author: Kevin Barasa
+*Phone : +254724778017
+*Email : kevin.barasa001@gmail.com
 */
 class Config {
     public static function get($path = null){
