@@ -83,7 +83,7 @@
             <div class="top-menu">
                 <ul class="nav pull-right top-menu">
                 <li><a class="logout glyphicon glyphicon-shopping-cart" href="cart.html">Cart</a></li>
-                    <li><a class="logout" href="isignin.html">Logout</a></li>
+                    <li><a class="logout" href="logout.php">Logout</a></li>
                 </ul>
             </div>
         </header>

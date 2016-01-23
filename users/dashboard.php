@@ -18,8 +18,7 @@ require_once 'includes/templates/menu.php';
 require_once 'includes/templates/sidebar.php';
 ?>
 
-          </div>
-      </aside>
+
       <!--sidebar end-->
 
       <!-- **********************************************************************************************************************************************************

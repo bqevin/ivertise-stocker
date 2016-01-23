@@ -6,7 +6,7 @@
 *Email : kevin.barasa001@gmail.com
 */
 
-//Error display set to 1 for debugging
+//Error display set to 1 for debugging. NB: Remember to disable
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
