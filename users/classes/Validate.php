@@ -43,7 +43,7 @@ class Validate{
                             $check = $this->_db->get($rule_value, array($item, '=', $value));
                             //var_dump($check);
                             if ($check->count()) {
-                                $this->addError("{$item} already exists!");
+                                $this->addError("{$item} is being used. Find unique Username!");
                             }
                             break;
                         default:
@@ -59,7 +59,7 @@ class Validate{
         return $this;
     }
 
-    //Errors Corner
+    //Errors Corner<Arrayed>
     private function addError($error){
         $this->_errors[] = $error;
     }
@@ -72,3 +72,7 @@ class Validate{
         return $this->_passed;
     }
 }
+
+/*Validate::stdClass Complete as at 23/01/2015 02:48:85 PM
+*Signed : Kevin Barasa(Author)
+*/

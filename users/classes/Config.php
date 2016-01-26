@@ -21,3 +21,7 @@ class Config {
         return false;
     }
 }
+
+/*DB::stdClass Complete as at 23/01/2015 06:40:08 PM
+*Signed : Kevin Barasa(Author)
+*/

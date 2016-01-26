@@ -23,6 +23,35 @@ if (!$user->count()) {
     }
 }
 
+// if (Session::exists('success')) {
+//     echo "<p>";
+//     echo Session::flash('success');
+//     echo "</p>";
+// }
+if (Session::exists('home')) {
+    echo "<p>";
+    echo Session::flash('home');
+    echo "</p>";
+}
+$user = new User;
+if ($user->isLoggedIn()) {
+    //echo "Logged In";
+?>
+    <p>Hello
+        <a href="display.php?user=<?php echo $user->data()->username;?>"><?php echo $user->data()->username;?></a>
+    </p>
+    <ul>
+        <li><a href="logout.php">Logout</a></li>
+        <li><a href="update.php">Update Info</a></li>
+         <li><a href="changepassword.php">Change Password</a></li>
+    </ul>
+<?php
+if ($user->hasPermission('admin')) {
+    echo "<p> You are an admin</p>";
+}
+} else{
+    echo "<p> You need to <a href='ingia.php'>log in</a> or <a href='register.php'>Register</p>";
+}
 // $user->insert('users',array(
 //     'username' => 'John',
 //     'password' => 'password',

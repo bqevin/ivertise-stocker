@@ -1,6 +1,10 @@
 <?php
 /*
-*Checks input data type before submiting it through Input::get('name');
+*Author: Kevin Barasa
+*Phone : +254724778017
+*Email : kevin.barasa001@gmail.com
+*
+*Checks + gets input data type before submiting it through Input::get('name');
 */
 class Input{
     //Checks if a submit data exists
@@ -25,6 +29,11 @@ class Input{
         } else if (isset($_GET[$item])) {
             return $_GET[$item];
         }
+        //Just incase a fiels is blank
         return '';
     }
 }
+
+/*Input::stdClass Complete as at 23/01/2015 04:06:05 AM
+*Signed : Kevin Barasa(Author)
+*/
