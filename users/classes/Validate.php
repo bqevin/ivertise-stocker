@@ -43,7 +43,7 @@ class Validate{
                             $check = $this->_db->get($rule_value, array($item, '=', $value));
                             //var_dump($check);
                             if ($check->count()) {
-                                $this->addError("{$item} is being used. Find unique Username!");
+                                $this->addError("{$item} is being used. Find unique {$item}!");
                             }
                             break;
                         default:

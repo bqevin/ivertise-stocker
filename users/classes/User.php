@@ -32,13 +32,13 @@ class User {
             $id = $this->data()->id;
         }
         if(!$this->_db->update('users', $id, $fields)){
-            throw new Exception("There was a problem updating");
+            throw new Exception("<p class='alert alert-danger'>There was a problem updating</p>");
 
         }
     }
     public function create($fields = array()){
         if (!$this->_db->insert('users', $fields)) {
-            throw new Exception("There was a problem creating this user account");
+            throw new Exception("<p class='alert alert-danger'>There was a problem creating this user account</p>");
         }
     }
     public function find($user = null){
@@ -64,7 +64,7 @@ class User {
             if ($user) {
                 if ($this->data()->password === Hash::make($password, $this->data()->salt)) {
                     Session::put($this->_sessionName, $this->data()->id);
-                    //If  user has clicked 'remmber', this code beow iis going to be run
+                    //If  user has clicked 'remember', this code below iis going to be run
                     if ($remember) {
                         $hash = Hash::unique();
                         $hashCheck = $this->_db->get('users_session', array('user_id', '=', $this->data()->id));

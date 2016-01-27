@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="CloudCore Technologies">
-    <meta name="keyword" content="Artists, Brands, Connecting, Models, Photography">
+    <meta name="keyword" content="">
 
-    <title>Ivertise Africa | Connecting brands with artists </title>
+    <title>Ivertise Africa | Connecting brands with artists</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
