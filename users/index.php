@@ -10,12 +10,13 @@ require_once 'core/init.php';
 $user = DB::getInstance()->query("SELECT * FROM users");
 if (!$user->count()) {
     echo "No User(s)!";
-}else{
-    //echo $user->first()->username;
-    foreach ($user->results() as $user) {
-        echo $user->username, '<br>', $user->email,'<br>',  $user->name,'<br><br>';
-    }
 }
+// else{
+//     //echo $user->first()->username;
+//     foreach ($user->results() as $user) {
+//         echo $user->username, '<br>', $user->email,'<br>',  $user->name,'<br><br>';
+//     }
+// }
 
 // if (Session::exists('success')) {
 //     echo "<p>";
@@ -56,6 +57,12 @@ if ($user->isLoggedIn()) { ?>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css" media="screen">
+        header{
+            padding-top:5px;
+            background: #177856;
+        }
+    </style>
   </head>
 
   <body>
@@ -79,65 +86,29 @@ if ($user->isLoggedIn()) { ?>
                     <!-- settings end -->
                     <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="fa fa-envelope-o"></i>
-                            <span class="badge bg-theme">5</span>
+                            <span class="badge bg-theme">0</span>
                         </a>
                         <ul class="dropdown-menu extended inbox">
                             <div class="notify-arrow notify-arrow-green"></div>
                             <li>
-                                <p class="green">You have 5 new messages</p>
+                                <p class="green">You have 0 new messages</p>
                             </li>
                             <li>
                                 <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="../assets/img/ui-zac.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="https://farm7.staticflickr.com/6163/6195546981_200e87ddaf_b.jpg"></span>
                                     <span class="subject">
-                                    <span class="from">Adminr</span>
+                                    <span class="from">Admin</span>
                                     <span class="time">Just now</span>
                                     </span>
                                     <span class="message">
-                                        Hi mate, how is everything?
+                                        Hi, welcome to Ivertisie Africa!
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="../assets/img/ui-divya.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Divya Manian</span>
-                                    <span class="time">40 mins.</span>
-                                    </span>
-                                    <span class="message">
-                                     Hi, I need your help with this.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="../assets/img/ui-danro.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Dan Rogers</span>
-                                    <span class="time">2 hrs.</span>
-                                    </span>
-                                    <span class="message">
-                                        Love your new Dashboard.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="../assets/img/ui-sherman.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Dj Sherman</span>
-                                    <span class="time">4 hrs.</span>
-                                    </span>
-                                    <span class="message">
-                                        Please, answer asap.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">See all messages</a>
+                                <a href="#">See all messages</a>
                             </li>
                         </ul>
                     </li>
@@ -147,7 +118,7 @@ if ($user->isLoggedIn()) { ?>
             </div>
             <div class="top-menu">
               <ul class="nav pull-right top-menu">
-              <li><a class="logout glyphicon glyphicon-shopping-cart" href="cart.html">Cart</a></li>
+              <li><a class="logout glyphicon glyphicon-shopping-cart" href="../cart.html">Cart</a></li>
                     <li><a class="logout" href="logout.php">Logout</a></li>
               </ul>
             </div>
@@ -165,11 +136,11 @@ if ($user->isLoggedIn()) { ?>
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
 
-                  <p class="centered"><a href="profile.html"><img src="../assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+                  <p class="centered"><a href="profile.html"><img src="https://farm7.staticflickr.com/6163/6195546981_200e87ddaf_b.jpg" class="img-circle" width="60"></a></p>
                   <h5 class="centered"><a href="display.php?user=<?php echo $user->data()->username; ?>"><?php echo $user->data()->name; ?></a> | 25yrs</h5>
 
                   <li class="mt">
-                      <a href="index.html">
+                      <a href="display.php?user=<?php echo $user->data()->username; ?>">
                           <i class="fa fa-dashboard"></i>
                           <span>Profile</span>
                       </a>
@@ -201,12 +172,12 @@ if ($user->isLoggedIn()) { ?>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-book"></i>
-                          <span>Extra Pages</span>
+                          <span>Buy Licences</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="blank.html">Blank Page</a></li>
-                          <li><a  href="login.html">Login</a></li>
-                          <li><a  href="lock_screen.html">Lock Screen</a></li>
+                          <li><a  href="#">Public</a></li>
+                          <li><a  href="#">General</a></li>
+
                       </ul>
                   </li>
 
@@ -444,4 +415,7 @@ $( document ).ready(function() {
 
   </body>
 </html>
-?>
+
+<?php } else{
+    echo "<p> You need to <a href='login.php'>log in</a> or <a href='register.php'>Register</p>";
+} ?>

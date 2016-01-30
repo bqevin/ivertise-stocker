@@ -1,298 +1,269 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome to IvertiseAfrica</title>
-     <meta charset="Utf-8">
-          <meta name=""   content="description">
-          <meta name=""  content=" author">
-           <meta name="viewport" content="width=device-width,  intial-scale=1,  maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="ivert.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<?php require_once 'templates/header.php'; ?>
 
-<!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <!--external css-->
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-responsive.css" rel="stylesheet">
-
-    <script src="assets/js/jquery.js"></script>
-
-
-
+  <style type="text/css">
+  @media all and (min-width: 1200px) {
+    .sap_tabs, .col-md-10{
+      width: 90%; margin-left: 180px;
+    }
+  }
+  </style>
 </head>
+
 <body>
-<header><i class="logo"><img src="logo.png"></i>  <span class="btn"><a href="users/login.php">Log in</a> | <a href="users/register.php">Sign Up</a></span></header>
-
-<section class ="one">
-
-
-    <h3>African Commercial Photography through Stock Photography and Assignment Photography.<br> We also provide Models and Makeup artist services for your advertising needs. </h3>
-    <center><form>
-
-        <input class="search" type="text" placeholder="Search Products"><br><button class="search"><a href="search.html">Search</a></button>
-    </form></center>
-</section>
-  <section class="category" >
-  <div class="container">
-    <div class="row">
-    <div>
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Images</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Photography</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Services</a></li>
-
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
-         <section id="main-content">
-          <section class="wrapper site-min-height">
-            <h3><i class="fa fa-angle-right"></i> Recent</h3>
-
-                <div class="row mt">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-                        <div class="project-wrapper">
-                            <div class="project">
-                                <div class="photo-wrapper">
-                                    <div class="photo">
-                                        <a class="fancybox" href="assets/img/portfolio/picc.jpg"><img class="img-responsive" src="assets/img/portfolio/picc.jpg" alt=""></a>
-                                    </div>
-                                    <div class="overlay"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- col-lg-4 -->
-
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-                        <div class="project-wrapper">
-                            <div class="project">
-                                <div class="photo-wrapper">
-                                    <div class="photo">
-                                        <a class="fancybox" href="assets/img/portfolio/port05.jpg"><img class="img-responsive" src="assets/img/portfolio/port05.jpg" alt=""></a>
-                                    </div>
-                                    <div class="overlay"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- col-lg-4 -->
-
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 desc">
-                        <div class="project-wrapper">
-                            <div class="project">
-                                <div class="photo-wrapper">
-                                    <div class="photo">
-                                        <a class="fancybox" href="assets/img/portfolio/port06.jpg"><img class="img-responsive" src="assets/img/portfolio/port06.jpg" alt=""></a>
-                                    </div>
-                                    <div class="overlay"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- col-lg-4 -->
-                </div><!-- /row -->
-
-    </div>
-    <div role="tabpanel" class="tab-pane" id="profile">
-<div id="login-page">
-        <div class="container">
-
-              <form class="form-login" action="index.html">
-                <h2 class="form-login-heading">sign in now</h2>
-                <div class="login-wrap">
-                    <input type="text" class="form-control" placeholder="User ID" autofocus>
-                    <br>
-                    <input type="password" class="form-control" placeholder="Password">
-                    <label class="checkbox">
-                        <span class="pull-right">
-                            <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
-
-                        </span>
-                    </label>
-                    <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
-                    <hr>
-
-
-                    <div class="registration">
-                        Don't have an account yet?<br/>
-                        <a class="" href="isignup.html">
-                            Create an account
-                        </a>
-                    </div>
-
-                </div>
-
-                  <!-- Modal -->
-                  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                  <h4 class="modal-title">Forgot Password ?</h4>
-                              </div>
-                              <div class="modal-body">
-                                  <p>Enter your e-mail address below to reset your password.</p>
-                                  <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
-
-                              </div>
-                              <div class="modal-footer">
-                                  <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                                  <button class="btn btn-theme" type="button">Submit</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- modal -->
-
-              </form>
-
-        </div>
+  <div class="header">
+    <div class="container">
+      <div class="logo">
+        <h1><a href="../index.html"><img src="assets/img/logo.png" alt=""></a></h1>
       </div>
-
-    <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!--BACKSTRETCH-->
-    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
-    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-    <script>
-        $.backstretch("", {speed: 500});
-    </script>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="messages">
-
-        <div id="login-page">
-        <div class="container">
-
-              <form class="form-login" action="index.html">
-                <h2 class="form-login-heading">sign in now</h2>
-                <div class="login-wrap">
-                    <input type="text" class="form-control" placeholder="User ID" autofocus>
-                    <br>
-                    <input type="password" class="form-control" placeholder="Password">
-                    <label class="checkbox">
-                        <span class="pull-right">
-                            <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
-
-                        </span>
-                    </label>
-                    <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
-                    <hr>
-
-
-                    <div class="registration">
-                        Don't have an account yet?<br/>
-                        <a class="" href="isignup.html">
-                            Create an account
-                        </a>
-                    </div>
-
-                </div>
-
-                  <!-- Modal -->
-                  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                  <h4 class="modal-title">Forgot Password ?</h4>
-                              </div>
-                              <div class="modal-body">
-                                  <p>Enter your e-mail address below to reset your password.</p>
-                                  <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
-
-                              </div>
-                              <div class="modal-footer">
-                                  <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                                  <button class="btn btn-theme" type="button">Submit</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- modal -->
-
-              </form>
-
-        </div>
-      </div>
-
-    <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!--BACKSTRETCH-->
-    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
-    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-    <script>
-        $.backstretch("", {speed: 500});
-    </script>
-    </div>
-
-  </div>
-
-</div>
-    </div>
-</div>
-
-
-
-
-</section>
-<section class="three">
-
-
-        <div class="services">
-
-            <ul>
-            <h3>Services</h3>
-            <li>Find Images</li>
-            <li>Hire Models</li>
-            <li>Assignment Photography</li>
-            <li>Make-up Artist</li>
-
-            </ul>
-        </div>
-        <div>
+      <div class="top_right" style="color:#177856!important;">
         <ul>
-            <h3>Participate</h3>
-
-            <li>Contribute Images</li>
-            <li> Make-up Artist</li>
-             <li>Assignment Photography</li>
+          <li><a href="users/register.php">Register</a></li>|
+          <li class="login">
+            <div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
+              <div id="loginBox">
+                <form id="loginForm">
+                  <fieldset id="body">
+                    <fieldset>
+                      <label for="email">Email Address</label>
+                      <input type="text" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password">
+                    </fieldset>
+                    <input type="submit" id="login" value="Sign in">
+                    <label for="checkbox">
+                      <input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+                  </fieldset>
+                  <span><a href="#">Forgot your password?</a></span>
+                </form>
+              </div>
+            </div>
+          </li>
         </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+	<div class="banner">
+		<div class="container">
+			<div class="span_1_of_1">
+			    <h2>Stock photography and model agency <br> for the African Market</h2>
+			    <div class="search">
+			      <ul class="nav1">
+		            <li id="search">
+						<form action="stock.php" method="post">
+							<input type="text" name="search_text" id="search_text" placeholder="Search"/>
+							<input type="button" name="search_button" id="search_button">
+						</form>
+					</li>
+					<li id="options">
+						<a href="#">All Images</a>
+						<ul class="subnav">
+							<li><a href="#">Photography</a></li>
+							<li><a href="#">Models</a></li>
+							<li><a href="#">MUA</a></li>
+						</ul>
+					</li>
+	              </ul>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="grid_1">
+		<h3>African Commercial Photography through Stock Photography and Assignment Photography. We also provide Models and Makeup artist services for your advertising needs.</h3>
+    <div class="col-md-10 sap_tabs">
+      <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+        <ul class="resp-tabs-list">
+          <li class="resp-tab-item" aria-controls="all_searches" role="tab"><span>All</span></li>
+          <li class="resp-tab-item" aria-controls="photography" role="tab"><span>Photography</span></li>
+          <li class="resp-tab-item" aria-controls="models" role="tab"><span>Models</span></li>
+          <li class="resp-tab-item" aria-controls="mui" role="tab"><span>MUI</span></li>
+          <div class="clearfix"></div>
+        </ul>
+        <div class="resp-tabs-container">
+          <div class="tab-1 resp-tab-content" aria-labelledby="all_searches">
+            <ul class="tab_img">
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic1.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic2.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic3.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic4.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic5.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic6.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic7.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+            <li>
+               <a href="#">
+                <img src="ph/images/thumbs/pic8.jpg" class="img-responsive" alt="" />
+                <div class="tab_desc">
+                  <p>There are many variations</p>
+                  <h4>#25478921</h4>
+                </div>
+              </a>
+            </li>
+              <li class="last">
+                <a href="#">
+                  <img src="ph/images/thumbs/pic9.jpg" class="img-responsive" alt="" />
+                  <!-- <div class="tab_desc">
+                    <p>There are many variations</p>
+                    <h4>#25478921</h4>
+                  </div> -->
+                </a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
 
+          <div class="tab-1 resp-tab-content" aria-labelledby="photography">
+            <ul class="tab_img">
+
+              <li>
+                <a href="single.php">
+                  <img src="ph/images/thumbs/pic2.jpg" class="img-responsive" alt="" />
+                  <div class="tab_desc">
+                    <p>There are many variations</p>
+                    <h4>#25478921</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="last">
+                <a href="single.php">
+                  <img src="ph/images/thumbs/pic1.jpg" class="img-responsive" alt="" />
+                  <div class="tab_desc">
+                    <p>There are many variations</p>
+                    <h4>#25478921</h4>
+                  </div>
+                </a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+          <div class="tab-1 resp-tab-content" aria-labelledby="models">
+            <ul class="tab_img">
+               <li class="last">
+                <a href="single.php">
+                  <img src="ph/images/thumbs/pic6.jpg" class="img-responsive" alt="" />
+                  <div class="tab_desc">
+                    <p>There are many variations</p>
+                    <h4>#25478921</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="last">
+                <a href="single.php">
+                  <img src="ph/images/thumbs/pic8.jpg" class="img-responsive" alt="" />
+                  <div class="tab_desc">
+                    <p>There are many variations</p>
+                    <h4>#25478921</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="last">
+                <a href="single.php">
+                  <img src="ph/images/thumbs/pic1.jpg" class="img-responsive" alt="" />
+                  <div class="tab_desc">
+                    <p>There are many variations</p>
+                    <h4>#25478921</h4>
+                  </div>
+                </a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+          <div class="tab-1 resp-tab-content" aria-labelledby="mui">
+            <ul class="tab_img">
+              <li class="last">
+                <a href="single.php">
+                  <img src="ph/images/thumbs/pic5.jpg" class="img-responsive" alt="" />
+                  <div class="tab_desc">
+                    <p>There are many variations</p>
+                    <h4>#25478921</h4>
+                  </div>
+                </a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
         </div>
-
-
-</section>
-<footer>
-
-<!-- Social Footer, Single Coloured -->
-<!-- Include Font Awesome Stylesheet in Header -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<!-- // -->
-<div class="container">
-
-        <div class="text-center center-block">
-            <p class="txt-railway">- Social -</p>
-            <br />
-                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
-                <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
-                <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
-                <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
-</div>
-
-</div>
-
-
-Copyright IvertiseAfrica.2016</footer>
+      </div>
+<!--       <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">«</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">»</span>
+          </a>
+        </li>
+      </ul> -->
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  </div>
+<?php require_once 'templates/footer.php'; ?>
 </body>
+
 </html>
+
