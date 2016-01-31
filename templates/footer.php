@@ -53,6 +53,6 @@
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Categories</a></li>
       </ul>
-      <p>Ivertise Africa &copy; 2015. All Rights Reserved &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Design by <a href="#" target="_blank">CloudCore Technologies</a> </p>
+      <p>Ivertise Africa &copy; 2015. All Rights Reserved &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Design by: <a href="#" target="_blank">CloudCore Technologies</a> </p>
     </div>
   </div>
